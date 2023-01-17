@@ -1,0 +1,10 @@
+/* TodoList styles */
+
+.todoList {
+	gap: 16px;
+	width: 100%;
+	margin-top: 32px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	background-color: #4a4e69;
+}

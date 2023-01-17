@@ -1,0 +1,75 @@
+/* Todo styles */
+
+.todo {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 20px;
+}
+
+/* get only the todos that are preceded by another todo */
+.todo + .todo {
+	border-top: 1px solid #9a8c98;
+}
+
+.todo:hover .todo-delete {
+	opacity: 1;
+}
+
+.todo-check {
+	display: flex;
+	position: relative;
+}
+
+.todo-checkmark {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.todo-checkmark svg {
+	fill: #4a4e69;
+}
+
+.todo-checkbox {
+	appearance: none;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	border: 1px solid #9a8c98;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.todo-description {
+	flex: 1;
+	font-size: 24px;
+	color: #f2e9e4;
+}
+
+.todo-delete {
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	border: 0;
+	background: none;
+	line-height: 1;
+	color: #9a8c98;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+.todo-delete:hover {
+	background: none;
+}
+
+.todo-complete .todo-description {
+	text-decoration: line-through;
+}
+.todo-complete .todo-checkbox {
+	background-color: #9a8c98;
+}

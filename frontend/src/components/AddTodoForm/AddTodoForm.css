@@ -1,0 +1,18 @@
+/* AddTodoForm styles */
+
+.addTodoForm {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	width: 100%;
+}
+
+.addTodoForm input {
+	flex: 1;
+	padding: 20px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #4a4e69;
+	font-size: 24px;
+    color: #f2e9e4;
+}
